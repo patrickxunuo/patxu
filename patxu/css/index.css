@@ -1,0 +1,80 @@
+/* paralax */
+ body, html {
+   height: 100%;
+   margin: 0;
+   color: #777;
+   cursor: pointer;
+   cursor: url('../images/cursor.png') 1 1, pointer;
+ }
+
+ .para-1, .para-2, .para-3 {
+   position: relative;
+   opacity: 0.65;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .para-1 {
+   background-image: url("../images/image7.jpg");
+   min-height: 100%;
+ }
+
+ .para-2 {
+   background-image: url("../images/image8.jpg");
+   min-height: 700px;
+ }
+
+ .para-3 {
+   background-image: url("../images/homepage1.jpg");
+   min-height: 700px;
+ }
+
+ .caption {
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100%;
+   text-align: center;
+   color: #000;
+   font-size: 80px;
+   font-family: 'Rock Salt', cursive;
+   user-select: none;
+ }
+
+ button {
+   font-size: 50px;
+   background-color: #272727;
+   color: #272727;
+   width: 150px;
+   height: 150px;
+   border-radius: 75px;
+   border: 2px solid black;
+   background-image: url('../images/icon.png');
+   background-size: contain;
+ }
+
+
+
+ .text-content {
+   text-align: center;
+   padding: 50px 80px;
+   text-align: justify;
+   color:#ddd;
+   background-color:#282E34;
+ }
+
+ ::-webkit-scrollbar {
+  display: none;
+}
+
+ /* Turn off parallax scrolling for tablets and phones */
+
+ @media only screen and (max-device-width: 1024px) {
+   .bgimg-1, .bgimg-2, .bgimg-3 {
+     background-attachment: scroll;
+   }
+ }
+
